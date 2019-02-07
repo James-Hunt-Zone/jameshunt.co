@@ -1,4 +1,5 @@
 import React from "react"
+// eslint-disable-next-line
 import styles from './styles.module.scss';
 
 class SectionBody extends React.Component {

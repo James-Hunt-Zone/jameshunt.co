@@ -1,0 +1,18 @@
+[
+  {
+    "value": "a",
+    "img": "../images/1.png"
+  },
+  {
+    "value": "b",
+    "img": "../images/2.png"
+  },
+  {
+    "value": "c",
+    "img": "../images/3.png"
+  },
+  {
+    "value": "d",
+    "img": "../images/4.png"
+  }
+]

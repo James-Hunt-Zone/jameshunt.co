@@ -8,8 +8,24 @@ storiesOf('Section Image', module)
   .addDecorator(withKnobs)
   .addDecorator(checkA11y)
   .add('with props', () => {
-    const img = text('Img', 'British Gas');
-    const alt = text('Alt', 'British Gas');
-
-    return <SectionImage img={img} alt={alt} />;
+    return <SectionImage img={query.allProjectsJson.edges[0].node.img.childImageSharp.fluid} />;
   });
+
+  export const query = graphql`
+  query HomePageQuery {
+    allProjectsJson {
+      edges {
+        node {
+          value
+          img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

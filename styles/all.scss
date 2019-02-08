@@ -2,30 +2,52 @@
 
 $bp-medium: 720px;
 
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  //font-family: Helvetica,Arial,sans-serif; 
   font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
   font-weight: 100;
   font-size: 16px;
   color: #3E5061;
-
+  overflow-x: hidden;
+  
   @media (min-width: $bp-medium) {
     font-size: 18px;
   }
 }
 
+article {
+  margin-bottom: 30px;
+
+  @media (min-width: $bp-medium) {
+    margin-bottom: 0;
+  }
+}
+
 .section {
+  position: relative;
   padding: 15px;
 
   @media (min-width: $bp-medium) {
     padding: 45px 30px;
+
+    &--top {
+      padding: 75px 30px 0 30px;
+    }
+  }
+
+  .section-imageFill {
+    background: rgb(232, 232, 232);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc((75px / 2) + 50%);
+    z-index: -1;
   }
 
   .section-header {
@@ -74,6 +96,13 @@ body {
   margin: 0;
 }
 
+.grid-item--image {
+  @media (min-width: $bp-medium) {
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+
 .grid-item--header {
   @media (min-width: $bp-medium) {
     margin-left: 25%;
@@ -88,6 +117,6 @@ body {
 
 .grid-item--2of3 {
   @media (min-width: $bp-medium) {
-    width: 60%;
+    width: 50%;
   }
 }

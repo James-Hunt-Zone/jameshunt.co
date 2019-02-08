@@ -1,11 +1,11 @@
 import React from "react"
 // eslint-disable-next-line
-import styles from './styles.module.scss';
+//import styles from './styles.module.scss';
 
-class SectionHeader extends React.Component {
+class ProjectHeader extends React.Component {
   render() {
     return (
-      <section class="section border-bottom">      
+      <section class="section">      
         <div class="grid-item grid-item--header">
           <h2 class="section-header">{this.props.title}</h2>
         </div>
@@ -14,4 +14,4 @@ class SectionHeader extends React.Component {
   }
 }
 
-export default SectionHeader;
+export default ProjectHeader;

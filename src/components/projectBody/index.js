@@ -2,7 +2,7 @@ import React from "react"
 // eslint-disable-next-line
 import styles from './styles.module.scss';
 
-class SectionBody extends React.Component {
+class ProjectBody extends React.Component {
   generateBody() {
     return <p class="section-body">{this.props.body}</p>
   }
@@ -20,7 +20,6 @@ class SectionBody extends React.Component {
 
   render() {
     let content;
-
     if (this.props.type === 'body') {
       content = this.generateBody();
     } else {
@@ -28,7 +27,7 @@ class SectionBody extends React.Component {
     }
 
     return (
-      <section class="section border-top border-bottom">      
+      <section class="section border-top">      
         <div class="grid-item grid-item--1of3">
           <h3 class="section-title">{this.props.title}</h3>
         </div>
@@ -40,4 +39,4 @@ class SectionBody extends React.Component {
   }
 }
 
-export default SectionBody;
+export default ProjectBody;

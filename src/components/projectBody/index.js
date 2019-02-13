@@ -4,13 +4,13 @@ import styles from './styles.module.scss';
 
 class ProjectBody extends React.Component {
   generateBody() {
-    return <p class="section-body">{this.props.body}</p>
+    return <p className="project-body">{this.props.body}</p>
   }
 
   generateTechUsed() {
-    return (<ul class="section-techList">
+    return (<ul className="project-list">
         {this.props.tech.map((item, index) =>
-          <li class="section-techListItem" key={index}>
+          <li className="project-listItem" key={index}>
             {item}
           </li>
         )}
@@ -27,11 +27,11 @@ class ProjectBody extends React.Component {
     }
 
     return (
-      <section class="section border-top">      
-        <div class="grid-item grid-item--1of3">
-          <h3 class="section-title">{this.props.title}</h3>
+      <section className="section section--divider">      
+        <div className="col col--span1">
+          <h3 className="project-subTitle">{this.props.title}</h3>
         </div>
-        <div class="grid-item grid-item--2of3">
+        <div className="col col--span2">
           {content}
         </div>
       </section>

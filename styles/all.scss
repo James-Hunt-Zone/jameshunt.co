@@ -19,11 +19,51 @@ body {
   }
 }
 
-article {
+.project {
   margin-bottom: 30px;
 
   @media (min-width: $bp-medium) {
     margin-bottom: 0;
+  }
+
+  .project-ribbon {
+    background: rgb(232, 232, 232);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc((75px / 2) + 50%);
+    z-index: -1;
+  }
+
+  .project-title {
+    font-size: 3em;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .project-subTitle {
+    font-weight: 100;
+    font-size: 1em;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  
+  .project-body {
+    line-height: 1.3em;
+    margin: 0;
+  }
+
+  .project-list {
+    margin: 0;
+    padding: 0;
+
+    .project-listItem {
+      margin-right: 15px;
+      display: inline-block;
+    }
   }
 }
 
@@ -39,84 +79,32 @@ article {
     }
   }
 
-  .section-imageFill {
-    background: rgb(232, 232, 232);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc((75px / 2) + 50%);
-    z-index: -1;
-  }
-
-  .section-header {
-    font-size: 3em;
-    font-weight: 200;
-    margin: 0;
-  }
-
-  .section-title {
-    font-weight: 100;
-    font-size: 1em;
-    margin: 0;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    
-  }
-  
-  .section-body {
-    line-height: 1.3em;
-    margin: 0;
-  }
-
-  .section-techList {
-    margin: 0;
-    padding: 0;
-
-    .section-techListItem {
-      margin-right: 15px;
-      display: inline-block;
-    }
+  &--divider {
+    border-top: 1px solid #ebebeb;
   }
 }
 
-.border-top {
-  border-top: 1px solid #ebebeb;
-}
-
-.border-bottom {
-  border-bottom: 1px solid #ebebeb;
-}
-
-.grid-item {
+.col {
   display: inline-block;
   vertical-align: top;
   width: 100%;
   margin: 0;
-}
 
-.grid-item--image {
-  @media (min-width: $bp-medium) {
-    margin-left: 25%;
-    width: 50%;
+  &--span1 {
+    @media (min-width: $bp-medium) {
+      width: 25%;
+    }
   }
-}
-
-.grid-item--header {
-  @media (min-width: $bp-medium) {
-    margin-left: 25%;
+  
+  &--span2 {
+    @media (min-width: $bp-medium) {
+      width: 50%;
+    }
   }
-}
-
-.grid-item--1of3 {
-  @media (min-width: $bp-medium) {
-    width: 25%;
-  }
-}
-
-.grid-item--2of3 {
-  @media (min-width: $bp-medium) {
-    width: 50%;
+  
+  &--offset1 {
+    @media (min-width: $bp-medium) {
+      margin-left: 25%;
+    }
   }
 }

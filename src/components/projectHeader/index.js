@@ -5,9 +5,9 @@ import React from "react"
 class ProjectHeader extends React.Component {
   render() {
     return (
-      <section class="section">      
-        <div class="grid-item grid-item--header">
-          <h2 class="section-header">{this.props.title}</h2>
+      <section className="section">      
+        <div className="col col--span2 col--offset1">
+          <h2 className="project-title">{this.props.title}</h2>
         </div>
       </section>
     );

@@ -14,7 +14,7 @@ export default ({data}) => {
       <Header></Header>
       <main className="projects">
         {data.allProjectsJson.edges.map((item, index) => 
-          <article key={index}>
+          <article className="project" key={index}>
             <ProjectImage img={item.node.img.childImageSharp.fluid}></ProjectImage>
             <ProjectHeader title={item.node.title}></ProjectHeader>
             <ProjectBody type="body" title="About" body={item.node.bio}></ProjectBody>

@@ -15,18 +15,3 @@ storiesOf('Section Body', module)
 
     return <SectionBody type={type} title={title} body={body} tech={tech} />;
   });
-
-/*
-storiesOf('button', module)
-  .addDecorator(checkA11y)
-  .add('Accessible', () => (
-    <button>
-      Accessible button
-    </button>
-  ))
-  .add('Inaccessible', () => (
-    <button style={{ backgroundColor: 'red', color: 'darkRed', }}>
-      Inaccessible button
-    </button>
-  ));
-*/

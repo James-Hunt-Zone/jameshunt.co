@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <header>
         <section class="section">      
-            Home
+            <h1>Home</h1>
         </section>
       </header>
     );

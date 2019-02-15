@@ -7,7 +7,7 @@ class ProjectImage extends React.Component {
       <section className="section section--top">
         <div className="project-ribbon"></div>
         <div className="col col--span2 col--offset1">
-          <Img fluid={this.props.img} />
+          <Img fluid={this.props.img} alt="Project Image"/>
         </div>
       </section>
     );

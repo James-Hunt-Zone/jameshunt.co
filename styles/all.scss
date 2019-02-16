@@ -27,7 +27,6 @@ body {
   }
 
   .project-ribbon {
-    background: rgb(232, 232, 232);
     display: block;
     position: absolute;
     top: 0;
@@ -35,6 +34,26 @@ body {
     width: 100%;
     height: calc((75px / 2) + 50%);
     z-index: -1;
+
+    &--theme1 {
+      background: #50514F;
+    }
+
+    &--theme2 {
+      background: #F25F5C;
+    }
+
+    &--theme3 {
+      background: #FFE066;
+    }
+
+    &--theme4 {
+      background: #247BA0;
+    }
+
+    &--theme5 {
+      background: #70C1B3;
+    }
   }
 
   .project-title {

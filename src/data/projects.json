@@ -1,24 +1,28 @@
 [
   {
     "title": "British Gas",
+    "theme": "theme1",
     "img": "../images/1.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus enim at eros eleifend, sit amet semper ex consectetur. Ut mauris leo, elementum non mauris eget, ultrices luctus felis. Quisque tincidunt vel elit et vulputate. Nullam eu neque tortor. Nulla luctus, ipsum quis sollicitudin mollis, nunc elit laoreet tellus, sit amet suscipit lacus felis ut nisl.",
     "tech": ["React", "Node", "Jest", "ES6"]
   },
   {
     "title": "Rightmove",
+    "theme": "theme2",
     "img": "../images/2.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus enim at eros eleifend, sit amet semper ex consectetur. Ut mauris leo, elementum non mauris eget, ultrices luctus felis. Quisque tincidunt vel elit et vulputate. Nullam eu neque tortor. Nulla luctus, ipsum quis sollicitudin mollis, nunc elit laoreet tellus, sit amet suscipit lacus felis ut nisl.",
     "tech": ["React", "Node", "Jest", "ES6"]
   },
   {
     "title": "McDonalds",
+    "theme": "theme3",
     "img": "../images/3.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus enim at eros eleifend, sit amet semper ex consectetur. Ut mauris leo, elementum non mauris eget, ultrices luctus felis. Quisque tincidunt vel elit et vulputate. Nullam eu neque tortor. Nulla luctus, ipsum quis sollicitudin mollis, nunc elit laoreet tellus, sit amet suscipit lacus felis ut nisl.",
     "tech": ["React", "Node", "Jest", "ES6"]
   },
   {
     "title": "McLaren",
+    "theme": "theme4",
     "img": "../images/4.png",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus enim at eros eleifend, sit amet semper ex consectetur. Ut mauris leo, elementum non mauris eget, ultrices luctus felis. Quisque tincidunt vel elit et vulputate. Nullam eu neque tortor. Nulla luctus, ipsum quis sollicitudin mollis, nunc elit laoreet tellus, sit amet suscipit lacus felis ut nisl.",
     "tech": ["React", "Node", "Jest", "ES6"]

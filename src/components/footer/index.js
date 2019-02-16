@@ -7,13 +7,13 @@ class Footer extends React.Component {
     return (
       <footer className={styles.footer}>
         <section class="section">      
-            <ul className={styles.footerList}>
-              <li className={styles.footerListItem}>
+            <ul className={styles['footer-list']}>
+              <li className={styles['footer-listItem']}>
                 <a className={styles.footerLink} href="https://github.com/James-Hunt-Zone">
                   <img className={styles.footerLogo} src="logo-github.png" alt="aa"></img>
                 </a>
               </li>
-              <li className={styles.footerListItem}>
+              <li className={styles['footer-listItem']}>
                 <a className={styles.footerLink} href="https://github.com/James-Hunt-Zone">
                   <img className={styles.footerLogo} src="logo-linkedin.png" alt="aa"></img>
                 </a>

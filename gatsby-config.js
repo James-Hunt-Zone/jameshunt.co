@@ -19,7 +19,15 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`, 
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
+    `gatsby-plugin-react-helmet`
   ],
   siteMetadata: {
     title: "James"

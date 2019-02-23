@@ -6,8 +6,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <section class="section">      
-            <h1>Home</h1>
+        <section className="section">      
+            <h1 className="h1">James Hunt</h1>
+            <h2 className="h2">Senior Frontend Developer</h2>
         </section>
       </header>
     );

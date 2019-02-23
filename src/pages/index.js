@@ -22,7 +22,7 @@ export default ({data}) => {
       <main className="projects">
         {data.allProjectsJson.edges.map((item, index) => 
           <article className="project" key={index}>
-            <ProjectImage img={item.node.img.childImageSharp.fluid}></ProjectImage>
+            <ProjectImage img={item.node.img.childImageSharp.fluid} alt={item.node.alt}></ProjectImage>
             <ProjectHeader title={item.node.title}></ProjectHeader>
             <ProjectBody type="body" title="About" body={item.node.bio}></ProjectBody>
             <ProjectBody type="tech" title="Tech" tech={item.node.tech}></ProjectBody>
@@ -43,6 +43,7 @@ export const query = graphql`
           title
           bio
           tech
+          alt
           img {
             childImageSharp {
               fluid {

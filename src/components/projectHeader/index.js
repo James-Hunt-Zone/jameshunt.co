@@ -7,7 +7,7 @@ class ProjectHeader extends React.Component {
     return (
       <section className="section">      
         <div className="col col--span2 col--offset1">
-          <h2 className="project-title">{this.props.title}</h2>
+          <h3 className="project-title">{this.props.title}</h3>
         </div>
       </section>
     );

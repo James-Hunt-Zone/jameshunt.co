@@ -29,7 +29,7 @@ class ProjectBody extends React.Component {
     return (
       <section className="section section--divider">      
         <div className="col col--span1">
-          <h3 className="project-subTitle">{this.props.title}</h3>
+          <h4 className="project-subTitle">{this.props.title}</h4>
         </div>
         <div className="col col--span2">
           {content}

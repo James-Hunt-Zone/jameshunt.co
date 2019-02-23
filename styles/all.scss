@@ -19,6 +19,30 @@ body {
   }
 }
 
+header {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
+  .h1 {
+    margin: 0;
+    font-weight: 200;
+
+    @media (min-width: $bp-medium) {
+      font-size: 4em;
+    }
+  }
+
+  .h2 {
+    margin: 0;
+    font-weight: 100;
+
+    @media (min-width: $bp-medium) {
+      font-size: 2em;
+    }
+  }
+}
+
 .project {
   margin-bottom: 30px;
 
@@ -54,6 +78,7 @@ body {
   .project-body {
     line-height: 1.3em;
     margin: 0;
+    white-space: pre-line;
   }
 
   .project-list {

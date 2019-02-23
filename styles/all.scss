@@ -51,7 +51,6 @@ header {
   }
 
   .project-ribbon {
-    background: rgb(232, 232, 232);
     display: block;
     position: absolute;
     top: 0;
@@ -59,6 +58,26 @@ header {
     width: 100%;
     height: calc((75px / 2) + 50%);
     z-index: -1;
+
+    &--theme1 {
+      background: #FDF6E6;
+    }
+
+    &--theme2 {
+      background: #FDDBDC;
+    }
+
+    &--theme3 {
+      background: #FCA5A9;
+    }
+
+    &--theme4 {
+      background: #C4DCEF;
+    }
+
+    &--theme5 {
+      background: #AAB5CD;
+    }
   }
 
   .project-title {

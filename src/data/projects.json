@@ -1,6 +1,7 @@
 [
   {
     "title": "British Gas",
+    "theme": "theme1",
     "img": "../images/1.png",
     "alt": "British Gas Homepage Image",
     "bio": "Working with the Personalisation Team at British Gas, I helped developed a number of different components to be consumed by both Ember and Polymer pages. These components offered Best Next Actions to help the user continue their journey on the homepage, secondary and confirmation pages.",
@@ -8,6 +9,7 @@
   },
   {
     "title": "Rightmove - Where Can I Live",
+    "theme": "theme2",
     "img": "../images/1.png",
     "alt": "Where Can I Live Image",
     "bio": "Helping to deliver a new tool from Rightmove, Where Can I Live offers users the abbility to find new locations that meet their bubget, property and travelling requirments. Using Google Maps, the applicatiopn enables the users to visually see areas on the map where they can click to discover more detailed information on the properties avaliable.",
@@ -15,6 +17,7 @@
   },
   {
     "title": "Rightmove",
+    "theme": "theme3",
     "img": "../images/1.png",
     "alt": "Rightmove Listing Page Image",
     "bio": "Rightmove wanted to update one of their highest traffic page to be more usfer frendly, resposive and optimised to meet the growing needs of their consumers on mobile and desktop devices.  Helping to build the listing pages, I worked on many of the features avaliable ranging from the property cards, filters, pagination and saving a search / property.",
@@ -22,6 +25,7 @@
   },
   {
     "title": "McDonalds - Little Piccadilly",
+    "theme": "theme4",
     "img": "../images/2.png",
     "alt": "McDonalds Little Piccadilly Image",
     "bio": "Little Piccadilly is a digital experience at an iconic landmark. It allows individuals to create a personal avatar and post it to the McDonalds’ screen at Piccadilly Circus. Users can pick from hundreds of assets ensuring a wide variety of avatars get submitted. Once on the screen, there's a vast array of animations from waving and dancing to doing the conga.\n\nThe project deliverables consisted of a microsite where users could build and sumbit an avitar.  Along side this, the Flash application powered the screen at Piccadilly. This application had a wide variety of animations to bring your avitar to life, along with sessional changes built in, a queuing system where it responds to the amount of avatars waiting and other effects.\n\nLittle Piccadilly was listed as 1 of the top 10 digital Innovations by Campaign Magazine in the annual 2014 edition.",
@@ -29,6 +33,7 @@
   },
   {
     "title": "Sony - Sleigh List Maker",
+    "theme": "theme5",
     "img": "../images/3.png",
     "alt": "Sony Sleigh List Maker Image",
     "bio": "Music Unlimited from Sony wanted to thank their users by giving away Christmas playlists. The idea was to give the user the perfect playlist based on their journey time back home. So we built a microsite that harnessed the power of Google Maps API to calculate the distance between their start and end locations based of different typeS of transportation.",
@@ -36,6 +41,7 @@
   },
   {
     "title": "McLaren",
+    "theme": "theme1",
     "img": "../images/4.png",
     "alt": "McLaren Image",
     "bio": "Working on multiple projects for McLaren I was able to contribute to the main Dot-com, Formula1 and Technology Group. All these sites are built around a Django backend and require a rich experience.\n\nThe Technology Group section was a new build that I got to work on alongside a junior member of the team. We spent about 2 weeks building a modules library where we could build specific components in isolation before then integrating into the Django templates and continuing to build pages one at a time.",

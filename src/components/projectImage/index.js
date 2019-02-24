@@ -9,7 +9,7 @@ class ProjectImage extends React.Component {
       <section className="section section--top">
         <div className={className}></div>
         <div className="col col--span2 col--offset1">
-          <Img fluid={this.props.img} alt={this.props.alt}/>
+          <Img className="project-image" fluid={this.props.img} alt={this.props.alt}/>
         </div>
       </section>
     );

@@ -3,6 +3,12 @@ const path = require(`path`)
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: 'jamesh.net'
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

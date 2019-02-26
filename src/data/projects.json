@@ -1,30 +1,37 @@
 [
   {
     "title": "British Gas",
+    "subTitle": "Best Next Actions",
     "theme": "theme1",
     "img": "../images/jameshunt_1.jpg",
     "alt": "British Gas Homepage Image",
     "bio": "Working with the Personalisation Team at British Gas, I helped developed a number of different components to be consumed by both Ember and Polymer pages. These components offered Best Next Actions to help the user continue their journey on the homepage, secondary and confirmation pages.",
-    "tech": ["Ember", "Polymer", "Storybook", "ES6", "LESS", "WebPack"]
+    "tech": ["Ember", "Polymer", "Storybook", "ES6", "LESS", "WebPack"],
+    "link": "https://www.britishgas.co.uk/"
   },
   {
-    "title": "Rightmove - Where Can I Live",
+    "title": "Rightmove",
+    "subTitle": "Where Can I Live",
     "theme": "theme2",
     "img": "../images/jameshunt_3.jpg",
     "alt": "Where Can I Live Image",
     "bio": "Helping to deliver a new tool from Rightmove, Where Can I Live offers users the abbility to find new locations that meet their bubget, property and travelling requirments. Using Google Maps, the applicatiopn enables the users to visually see areas on the map where they can click to discover more detailed information on the properties avaliable.",
-    "tech": ["React", "Redux", "Jest", "ES6", "Google Maps", "SASS", "WebPack"]
+    "tech": ["React", "Redux", "Jest", "ES6", "Google Maps", "SASS", "WebPack"],
+    "link": "https://where.rightmove.co.uk/"
   },
   {
     "title": "Rightmove",
+    "subTitle": "Property Listing",
     "theme": "theme3",
     "img": "../images/jameshunt_2.jpg",
     "alt": "Rightmove Listing Page Image",
     "bio": "Rightmove wanted to update one of their highest traffic page to be more usfer frendly, resposive and optimised to meet the growing needs of their consumers on mobile and desktop devices.  Helping to build the listing pages, I worked on many of the features avaliable ranging from the property cards, filters, pagination and saving a search / property.",
-    "tech": ["Knockout", "ES6", "Flux", "SASS", "Jasmine", "Java"]
+    "tech": ["Knockout", "ES6", "Flux", "SASS", "Jasmine", "Java"],
+    "link": "https://www.rightmove.co.uk/"
   },
   {
-    "title": "McDonalds - Little Piccadilly",
+    "title": "McDonalds",
+    "subTitle": "Little Piccadilly",
     "theme": "theme4",
     "img": "../images/jameshunt_4.jpg",
     "alt": "McDonalds Little Piccadilly Image",
@@ -32,27 +39,32 @@
     "tech": ["JavaScript", "HTML 5", "SASS", "Gulp", "Flash", "AS3"]
   },
   {
-    "title": "Sony - Sleigh List Maker",
+    "title": "Flyte",
+    "subTitle": "Online Shop",
     "theme": "theme5",
     "img": "../images/jameshunt_6.jpg",
-    "alt": "Sony Sleigh List Maker Image",
-    "bio": "Music Unlimited from Sony wanted to thank their users by giving away Christmas playlists. The idea was to give the user the perfect playlist based on their journey time back home. So we built a microsite that harnessed the power of Google Maps API to calculate the distance between their start and end locations based of different typeS of transportation.",
+    "alt": "Flyte Image",
+    "bio": "Flyte is a service where you can pre-order duty free items with extra discounts on selected items, and then collect these at the airport before flying. The site is a fully responsive working on mobile to desktop platforms. The site needed to work without JavaScript, but when JavaScript is turned on the user gets a rich ecommerce experience.\n\nUsers can add items to their basket, checkout, review previous orders, sign-in with Facebook or VK to name a few of the key features.",
     "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"]
   },
   {
     "title": "McLaren",
+    "subTitle": "Formula 1 | Applied Technologies",
     "theme": "theme1",
     "img": "../images/jameshunt_5.jpg",
     "alt": "McLaren Image",
     "bio": "Working on multiple projects for McLaren I was able to contribute to the main Dot-com, Formula1 and Technology Group. All these sites are built around a Django backend and require a rich experience.\n\nThe Technology Group section was a new build that I got to work on alongside a junior member of the team. We spent about 2 weeks building a modules library where we could build specific components in isolation before then integrating into the Django templates and continuing to build pages one at a time.",
-    "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"]
+    "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"],
+    "link": "https://www.mclaren.com/"
   },
   {
-    "title": "Land Of Me",
+    "title": "Made In Me",
+    "subTitle": "Land Of Me",
     "theme": "theme2",
     "img": "../images/jameshunt_7.jpg",
     "alt": "Land Of Me Image",
     "bio": "Working on multiple projects for McLaren I was able to contribute to the main Dot-com, Formula1 and Technology Group. All these sites are built around a Django backend and require a rich experience.\n\nThe Technology Group section was a new build that I got to work on alongside a junior member of the team. We spent about 2 weeks building a modules library where we could build specific components in isolation before then integrating into the Django templates and continuing to build pages one at a time.",
-    "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"]
+    "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"],
+    "link": "http://madeinme.com/the-land-of-me/"
   }
 ]

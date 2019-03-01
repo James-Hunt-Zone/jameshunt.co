@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs/html';
+import { withKnobs } from '@storybook/addon-knobs/html';
 import { checkA11y } from '@storybook/addon-a11y';
 import Footer from './index';
 

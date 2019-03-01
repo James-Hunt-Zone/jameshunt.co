@@ -45,6 +45,14 @@
     "@storybook/addon-viewport": "^v4.2.0-alpha.10",
     "@storybook/addons": "^v4.2.0-alpha.10",
     "@storybook/react": "^v4.2.0-alpha.10",
-    "babel-loader": "^8.0.5"
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }

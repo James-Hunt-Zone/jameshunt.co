@@ -1,20 +1,22 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
-class ProjectImage extends React.Component {
-  render () {
-    let className = 'project-ribbon project-ribbon--' + this.props.theme;
+const ProjectImage = ({ projectInfo }) => {
+  const { alt, theme, img } = projectInfo;
+  const className = `project-ribbon project-ribbon--${ theme }`;
 
-    return (
-      <section className="section section--top">
-        <div className={className}></div>
-        <div className="col col--span2 col--offset1">
-          <Img className="project-image"
-            fluid={this.props.img} alt={this.props.alt} />
-        </div>
-      </section>
-    );
-  }
-}
+  return (
+    <section className="section section--top">
+      <div className={className} />
+      <div className="col col--span2 col--offset1">
+        <Img
+          className="project-image"
+          fluid={img.childImageSharp.fluid}
+          alt={alt}
+        />
+      </div>
+    </section>
+  );
+};
 
 export default ProjectImage;

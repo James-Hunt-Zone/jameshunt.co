@@ -1,11 +1,11 @@
-const path = require(`path`)
+const path = require(`path`);
 
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: 'jamesh.net'
+        bucketName: 'jamesh.net'
       },
     },
     {
@@ -36,6 +36,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`
   ],
   siteMetadata: {
-    title: "James"
-  },
-} 
+    title: 'James Hunt',
+    // eslint-disable-next-line
+    description: 'James Hunt: Senior Frontend Developer working at British Gas. This site is James Hunts portfolio of current and past projects.'
+  }
+};

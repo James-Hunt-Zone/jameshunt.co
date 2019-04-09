@@ -1,41 +1,49 @@
 import React from 'react';
-// eslint-disable-next-line
 import styles from './styles.module.scss';
 
 class Footer extends React.Component {
-  render () {
+  render() {
     return (
       <footer className={styles.footer}>
         <section className="section">
           <ul className={styles['footer-list']}>
             <li className={styles['footer-listItem']}>
-              <a className={styles.footerLink}
+              <a
+                className={styles.footerLink}
                 href="https://www.linkedin.com/in/james-hunt-0852a94"
-                title="Visit James Hunt's LinkedIn page">
-                <img className={styles.footerLogo}
+                title="Visit James Hunt's LinkedIn page"
+              >
+                <img
+                  className={styles.footerLogo}
                   src="logo-linkedin.png"
-                  alt="LinkedIn Logo">
-                </img>
+                  alt="LinkedIn Logo"
+                />
               </a>
             </li>
             <li className={styles['footer-listItem']}>
-              <a className={styles.footerLink}
+              <a
+                className={styles.footerLink}
                 href="https://github.com/James-Hunt-Zone"
-                title="Visit James Hunt's GitHub page">
-                <img className={styles.footerLogo}
+                title="Visit James Hunt's GitHub page"
+              >
+                <img
+                  className={styles.footerLogo}
                   src="logo-github.png"
-                  alt="GitHub Logo">
-                </img>
+                  alt="GitHub Logo"
+                />
               </a>
             </li>
             <li className={styles['footer-listItem']}>
-              <a className={styles.footerLink}
+              <a
+                className={styles.footerLink}
                 href="https://medium.com/@jameshunt.co"
-                title="Visit James Hunt's Medium page">
-                <img className={styles.footerLogo}
+                title="Visit James Hunt's Medium page"
+              >
+                <img
+                  className={styles.footerLogo}
                   src="logo-medium.png"
-                  alt="Medium Logo">
-                </img>
+                  alt="Medium Logo"
+                />
               </a>
             </li>
           </ul>

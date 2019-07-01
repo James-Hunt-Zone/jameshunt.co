@@ -1,18 +1,15 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 const ProjectLink = ({ projectInfo }) => {
   const { link } = projectInfo;
   if (!link) return null;
 
   return (
-    <section className="section section--divider">
-      <div className="col Ìcol--span2 col--offset1">
-        <a className="project-link" href={link}>
-          <span>View Project</span>
-          <i>→</i>
-        </a>
-      </div>
-    </section>
+    <a className={styles['project-link']} href={link}>
+      <span>View Project</span>
+      <i>→</i>
+    </a>
   );
 };
 

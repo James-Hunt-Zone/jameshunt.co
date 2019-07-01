@@ -1,32 +1,32 @@
-import { graphql } from "gatsby";
+import { graphql } from 'gatsby';
 
-export default graphql`
-  {
-    site {
-      siteMetadata {
-        title
-        description
-      }
+const q = `{
+  site {
+    siteMetadata {
+      title
+      description
     }
-    allProjectsJson {
-      edges {
-        node {
-          title
-          subTitle
-          theme
-          bio
-          tech
-          alt
-          link
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+  }
+  allProjectsJson {
+    edges {
+      node {
+        title
+        subTitle
+        theme
+        bio
+        tech
+        alt
+        link
+        img {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
     }
   }
-`;
+}`;
+
+export default q;

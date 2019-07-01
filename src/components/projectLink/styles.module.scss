@@ -1,0 +1,20 @@
+@import '../../../styles/all';
+
+.project-link {
+  text-decoration: none;
+
+  span {
+    display: inline-block;
+    padding: $grid-gap $grid-gap * 3;
+    background: #428aff;
+    color: #ffffff;
+  }
+
+  i {
+    display: inline-block;
+    padding: $grid-gap;
+    background: #136dff;
+    color: #ffffff;
+    font-style: normal;
+  }
+}

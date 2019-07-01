@@ -1,12 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import SectionImage from './index';
+import ProjectImage from '../../../src/components/projectImage';
 
 const data = {
   allProjectsJson: {
     edges: [
       {
         node: {
+          theme: 'theme1',
+          alt: 'British Gas Homepage Image',
           img: {
             childImageSharp: {
               fluid: {
@@ -28,8 +30,6 @@ const data = {
   }
 };
 
-storiesOf('Section Image', module).add('with props', () => {
-  const nodeItem = data.allProjectsJson.edges[0].node;
-  const fluidImg = nodeItem.img.childImageSharp.fluid;
-  return <SectionImage img={fluidImg} />;
+storiesOf('Project Image', module).add('default', () => {
+  return <ProjectImage projectInfo={data.allProjectsJson.edges[0].node} />;
 });

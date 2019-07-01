@@ -3,14 +3,16 @@ import styles from './styles.module.scss';
 
 class ProjectBody extends React.Component {
   generateBody() {
-    return <p className="project-body">{this.props.projectInfo.bio}</p>;
+    const { bio: projectBio } = this.props.projectInfo;
+    return <p className={styles['project-body']}>{projectBio}</p>;
   }
 
   generateTechUsed() {
+    const { tech: projectTech } = this.props.projectInfo;
     return (
-      <ul className="project-list">
-        {this.props.projectInfo.tech.map((item, index) => (
-          <li className="project-listItem" key={index}>
+      <ul className={styles['project-list']}>
+        {projectTech.map((item, index) => (
+          <li className={styles['project-listItem']} key={index}>
             {item}
           </li>
         ))}
@@ -19,18 +21,11 @@ class ProjectBody extends React.Component {
   }
 
   render() {
-    const { type, title } = this.props;
+    const { type } = this.props;
     const content =
       type === 'body' ? this.generateBody() : this.generateTechUsed();
 
-    return (
-      <section className="section section--divider">
-        <div className="col col--span1">
-          <h5 className="project-heading">{title}</h5>
-        </div>
-        <div className="col col--span2">{content}</div>
-      </section>
-    );
+    return content;
   }
 }
 

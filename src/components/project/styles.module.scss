@@ -1,0 +1,10 @@
+@import '../../../styles/all';
+
+.project {
+  display: grid;
+  grid-gap: $grid-gap-sm;
+
+  @media (min-width: $bp-medium) {
+    grid-gap: $grid-gap-lr;
+  }
+}

@@ -1,12 +1,11 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 const Header = () => {
   return (
-    <header>
-      <section className="section">
-        <h1 className="h1">James Hunt</h1>
-        <h2 className="h2">Senior Frontend Developer</h2>
-      </section>
+    <header className={styles.header}>
+      <h1 className={styles.h1}>James Hunt</h1>
+      <h2 className={styles.h2}>Senior Frontend Developer</h2>
     </header>
   );
 };

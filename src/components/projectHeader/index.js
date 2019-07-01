@@ -1,15 +1,14 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 const ProjectHeader = ({ projectInfo }) => {
   const { title, subTitle } = projectInfo;
 
   return (
-    <section className="section">
-      <div className="col col--span2 col--offset1">
-        <h3 className="project-title">{title}</h3>
-        <h4 className="project-subTitle">{subTitle}</h4>
-      </div>
-    </section>
+    <React.Fragment>
+      <h3 className={styles['project-header']}>{title}</h3>
+      <h4 className={styles['project-subHeader']}>{subTitle}</h4>
+    </React.Fragment>
   );
 };
 

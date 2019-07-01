@@ -64,7 +64,7 @@
     "img": "../images/jameshunt_7.jpg",
     "alt": "Land Of Me Image",
     "bio": "Working on multiple projects for McLaren I was able to contribute to the main Dot-com, Formula1 and Technology Group. All these sites are built around a Django backend and require a rich experience.\n\nThe Technology Group section was a new build that I got to work on alongside a junior member of the team. We spent about 2 weeks building a modules library where we could build specific components in isolation before then integrating into the Django templates and continuing to build pages one at a time.",
-    "tech": ["JavaScript", "HTML 5", "SASS", "Gulp"],
+    "tech": ["AS3", "Flash", "iOS", "Air"],
     "link": "http://madeinme.com/the-land-of-me/"
   }
 ]

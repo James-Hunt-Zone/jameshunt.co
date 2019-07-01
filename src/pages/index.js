@@ -1,17 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import siteData from '../services/siteData';
+import { graphql } from 'gatsby';
 import Header from '../components/header';
-import ProjectImage from '../components/projectImage';
-import ProjectHeader from '../components/ProjectHeader';
-import ProjectBody from '../components/ProjectBody';
-import ProjectLink from '../components/ProjectLink';
+import Project from '../components/project';
 import Footer from '../components/footer';
 import styles from '../../styles/all.scss';
 
 const HomePage = ({ data }) => {
+  const projects = data.allProjectsJson.edges;
   return (
-    <div>
+    <React.Fragment>
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
@@ -21,21 +19,44 @@ const HomePage = ({ data }) => {
       </Helmet>
       <Header />
       <main className="projects">
-        {data.allProjectsJson.edges.map((project, index) => (
-          <article className="project" key={index}>
-            <ProjectImage projectInfo={project.node} />
-            <ProjectHeader projectInfo={project.node} />
-            <ProjectBody projectInfo={project.node} type="body" title="About" />
-            <ProjectBody projectInfo={project.node} type="tech" title="Tech" />
-            <ProjectLink projectInfo={project.node} />
-          </article>
+        {projects.map((project, index) => (
+          <Project key={index} project={project.node} />
         ))}
       </main>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
 export default HomePage;
 
-export const query = siteData;
+export const query = graphql`
+  {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+    allProjectsJson {
+      edges {
+        node {
+          title
+          subTitle
+          theme
+          bio
+          tech
+          alt
+          link
+          img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

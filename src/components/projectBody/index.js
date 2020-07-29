@@ -1,32 +1,46 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import styled from 'styled-components';
+import ProjectSection from '../ProjectSection';
 
-class ProjectBody extends React.Component {
-  generateBody() {
-    const { bio: projectBio } = this.props.projectInfo;
-    return <p className={styles['project-body']}>{projectBio}</p>;
-  }
+const Body = styled.p`
+  line-height: 1.3em;
+  margin: 0;
+  white-space: pre-line;
+`;
 
-  generateTechUsed() {
-    const { tech: projectTech } = this.props.projectInfo;
+const TechList = styled.ul`
+  margin: 0;
+  padding: 0;
+`;
+
+const TechListItem = styled.li`
+  margin-right: 15px;
+  display: inline-block;
+`;
+
+const ProjectBody = ({ projectInfo, isTechContent }) => {
+  const generateBody = () => {
+    const { bio: projectBio } = projectInfo;
+
+    return <Body>{projectBio}</Body>;
+  };
+
+  const generateTechUsed = () => {
+    const { tech: projectTech } = projectInfo;
+
     return (
-      <ul className={styles['project-list']}>
+      <TechList>
         {projectTech.map((item, index) => (
-          <li className={styles['project-listItem']} key={index}>
-            {item}
-          </li>
+          <TechListItem key={index}>{item}</TechListItem>
         ))}
-      </ul>
+      </TechList>
     );
-  }
+  };
 
-  render() {
-    const { type } = this.props;
-    const content =
-      type === 'body' ? this.generateBody() : this.generateTechUsed();
+  const content = isTechContent ? generateTechUsed() : generateBody();
+  const sectionTitle = isTechContent ? 'Tech' : 'About';
 
-    return content;
-  }
-}
+  return <ProjectSection sectionTitle={sectionTitle}>{content}</ProjectSection>;
+};
 
 export default ProjectBody;

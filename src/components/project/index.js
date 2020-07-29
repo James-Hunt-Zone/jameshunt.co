@@ -1,40 +1,37 @@
 import React from 'react';
-import SectionLayout from '../sectionLayout';
-import ProjectImage from '../projectImage';
-import ProjectRibbon from '../projectRibbon';
-import ProjectHeader from '../projectHeader';
-import ProjectTitle from '../projectTitle';
-import ProjectBody from '../projectBody';
-import ProjectLink from '../projectLink';
-import SectionBreak from '../sectionBreak';
-import styles from './styles.module.scss';
+import styled from 'styled-components';
+import ProjectHeader from '../ProjectHeader';
+import ProjectBody from '../ProjectBody';
+import ProjectLink from '../ProjectLink';
+
+const Article = styled.article`
+  display: grid;
+  grid-gap: 25px;
+
+  @media (min-width: 720px) {
+    grid-gap: 45px;
+  }
+`;
+
+const HR = styled.hr`
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+  border-top: 1px solid #dedede;
+`;
 
 const Project = ({ project }) => {
+  const { link } = project;
+
   return (
-    <article className={styles.project}>
-      {/* Project Image */}
-      <SectionLayout mainChildren={<ProjectImage projectInfo={project} />}>
-        <ProjectRibbon projectInfo={project} />
-      </SectionLayout>
-      {/* Project Header */}
-      <SectionLayout mainChildren={<ProjectHeader projectInfo={project} />} />
-      <SectionBreak />
-      {/* Project Body */}
-      <SectionLayout
-        contextChildren={<ProjectTitle title="About" />}
-        mainChildren={<ProjectBody type="body" projectInfo={project} />}
-      />
-      <SectionBreak />
-      {/* Project Tech */}
-      <SectionLayout
-        contextChildren={<ProjectTitle title="Tech" />}
-        mainChildren={<ProjectBody type="tech" projectInfo={project} />}
-      />
-      {/* Project Link */}
-      {project.link ? (
-        <SectionLayout mainChildren={<ProjectLink projectInfo={project} />} />
-      ) : null}
-    </article>
+    <Article>
+      <ProjectHeader projectInfo={project} />
+      <HR />
+      <ProjectBody projectInfo={project} />
+      <HR />
+      <ProjectBody projectInfo={project} isTechContent />
+      {link ? <ProjectLink projectInfo={project} /> : null}
+    </Article>
   );
 };
 

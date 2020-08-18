@@ -10,21 +10,20 @@ const FooterEl = styled.footer`
 const List = styled.ul`
   padding: 0;
   margin: 0;
+  line-height: 0;
 `;
 
 const ListItem = styled.li`
   display: inline-block;
   list-style: none;
-  height: 60px;
-  margin-right: 30px;
+  height: 30px;
+  margin-right: 15px;
 `;
 
 const Link = styled.a`
   display: inline-block;
   list-style: none;
-  height: 60px;
-  margin-right: 30px;
-  height: 60px;
+  height: 30px;
   display: inline-block;
 `;
 

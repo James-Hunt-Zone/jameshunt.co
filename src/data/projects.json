@@ -1,5 +1,15 @@
 [
   {
+    "title": "Your Timetable",
+    "subTitle": "Personal project",
+    "theme": "#8CB369",
+    "img": "../images/jameshunt_9.png",
+    "alt": "Your Timetable",
+    "bio": "A personal project aimed at students or individuals who have a timetable or schedule, and want to keep a digital version on their device. The app allows you to scroll through a week and view your events. You can easily add new or update existing events. Dark mode is also supported. The app was previously built with expo, but was ported to be a raw react-native project as a learning exercise and to reduce the build size from 70Mb to 10Mb.",
+    "tech": ["React Native", "Typescript", "Xcode"],
+    "link": "https://apps.apple.com/gb/app/your-timetable/id1527234564"
+  },
+  {
     "title": "Genomics England",
     "subTitle": "100,000 Genome Project",
     "theme": "#993955",

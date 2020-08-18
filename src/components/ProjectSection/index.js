@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   grid-row-gap: 15px;
 
   @media (min-width: 720px) {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     padding: 0 30px;
   }
 `;

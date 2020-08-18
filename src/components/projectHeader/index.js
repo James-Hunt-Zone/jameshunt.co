@@ -25,13 +25,25 @@ const SubTitle = styled.h4`
   }
 `;
 
+const ImageWrapper = styled.div`
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+
+  @media (min-width: 720px) {
+    margin-top: 60px;
+  }
+`;
+
 const ProjectHeader = ({ projectInfo }) => {
   const { alt, img, title, subTitle } = projectInfo;
 
   return (
     <>
       <ProjectSection>
-        <Img fluid={img.childImageSharp.fluid} alt={alt} />
+        <ImageWrapper>
+          <Img fluid={img.childImageSharp.fluid} alt={alt} />
+        </ImageWrapper>
         <ProjectRibbon projectInfo={projectInfo} />
       </ProjectSection>
       <ProjectSection>

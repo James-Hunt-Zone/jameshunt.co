@@ -2,7 +2,7 @@
   {
     "title": "Your Timetable",
     "subTitle": "Personal project",
-    "theme": "#8CB369",
+    "theme": "linear-gradient(#FF416C, #FF4B2B)",
     "img": "../images/jameshunt_9.png",
     "alt": "Your Timetable",
     "bio": "A personal project aimed at students or individuals who have a timetable or schedule, and want to keep a digital version on their device. The app allows you to scroll through a week and view your events. You can easily add new or update existing events. Dark mode is also supported. The app was previously built with expo, but was ported to be a raw react-native project as a learning exercise and to reduce the build size from 70Mb to 10Mb.",
@@ -12,7 +12,7 @@
   {
     "title": "Genomics England",
     "subTitle": "100,000 Genome Project",
-    "theme": "#993955",
+    "theme": "linear-gradient(#00B4DB, #0083B0)",
     "img": "../images/jameshunt_8.png",
     "alt": "Genomics England",
     "bio": "Working with Genomics England to help deliver the 100,000 genomes project, Zone built 4 key application to help the NHS process cancer and rare disease patients whose genomes could be analysed. Build to the highest accessibility standards, and powered by a component library with shard themeable components. The applications - Test Selection, Test Order, Admin Tool and Dashboard along with the component library are set to help achieve the goals set.",
@@ -25,13 +25,12 @@
       "emotion",
       "WebPack",
       "React Testing Library"
-    ],
-    "link": "https://www.britishgas.co.uk/"
+    ]
   },
   {
     "title": "British Gas",
     "subTitle": "Best Next Actions",
-    "theme": "#AE76A6",
+    "theme": "linear-gradient(#636363, #a2ab58)",
     "img": "../images/jameshunt_1.jpg",
     "alt": "British Gas Homepage Image",
     "bio": "Working with the Personalisation Team at British Gas, I helped developed a number of components to be consumed within Ember and Adobe Experience Manager. These components offered Best Next Actions at key stages to help the user continue their journey and take advantage of potential custom offers available to them. ",
@@ -41,7 +40,7 @@
   {
     "title": "Rightmove",
     "subTitle": "Where Can I Live",
-    "theme": "#A3C3D9",
+    "theme": "linear-gradient(#ad5389, #3c1053)",
     "img": "../images/jameshunt_3.jpg",
     "alt": "Where Can I Live Image",
     "bio": "Helping to deliver a new tool from Rightmove, Where Can I Live offers users the ability to find new locations that meet your budget, property and travelling requirements. Using Google Maps, the application enables the users to visually see areas on the map where they could live based on the search criteria. Users can then click to discover more detailed information on the properties available.",
@@ -51,7 +50,7 @@
   {
     "title": "Rightmove",
     "subTitle": "Property Listing",
-    "theme": "#CCD6EB",
+    "theme": "linear-gradient(#a8c0ff, #3f2b96)",
     "img": "../images/jameshunt_2.jpg",
     "alt": "Rightmove Listing Page Image",
     "bio": "Rightmove wanted to update one of their highest traffic pages to be more user friendly, responsive and optimised to meet the growing needs of consumers on mobile and desktop devices.  Helping to build the listing pages, I worked on many of the features available ranging from the property cards, filters, pagination and saving a search or property.",
@@ -61,7 +60,7 @@
   {
     "title": "McDonalds",
     "subTitle": "Little Piccadilly",
-    "theme": "#E9ECF5",
+    "theme": "linear-gradient(#bc4e9c, #f80759)",
     "img": "../images/jameshunt_4.jpg",
     "alt": "McDonalds Little Piccadilly Image",
     "bio": "Little Piccadilly is a digital experience at an iconic landmark. It allowed individuals to create a personal avatar and post it to the McDonalds’ screen at Piccadilly Circus. Users can pick from hundreds of assets ensuring a wide variety of avatars get submitted. Once on the screen, there's a vast array of animations from waving and dancing to doing the conga.\n\nThe project deliverables consisted of a microsite where users could build and submit an avatar.  Alongside this, the Flash application powered the screen at Piccadilly. This application had a wide variety of animations to bring your avatar to life, along with sessional changes built in, a queuing system where it responds to the amount of avatars waiting and other effects.\n\nLittle Piccadilly was listed as 1 of the top 10 digital Innovations by Campaign Magazine in the annual 2014 edition.",
@@ -70,7 +69,7 @@
   {
     "title": "Flyte",
     "subTitle": "Online Shop",
-    "theme": "#3F6C51",
+    "theme": "linear-gradient(#11998e, #38ef7d)",
     "img": "../images/jameshunt_6.jpg",
     "alt": "Flyte Image",
     "bio": "Flyte is a service where you can pre-order duty free items with extra discounts on selected items, and then collect these at the airport before flying. The site is a fully responsive working on mobile to desktop platforms. The site needed to work without JavaScript, but when JavaScript is turned on the user gets a rich ecommerce experience.\n\nUsers can add items to their basket, checkout, review previous orders, sign-in with Facebook or VK to name a few of the key features.",
@@ -79,7 +78,7 @@
   {
     "title": "McLaren",
     "subTitle": "Formula 1 | Applied Technologies",
-    "theme": "#453823",
+    "theme": "linear-gradient(#FC466B, #3F5EFB)",
     "img": "../images/jameshunt_5.jpg",
     "alt": "McLaren Image",
     "bio": "Working on multiple projects for McLaren I was able to contribute to the homepage, Formula1 and Technology Group. All these sites are built around a Django backend and require a rich experience.\n\nThe Technology Group section was a new build where we created a modules library where we could build specific components in isolation, before then integrating into the Django templates and continuing to build pages one at a time.",
@@ -89,7 +88,7 @@
   {
     "title": "Made In Me",
     "subTitle": "Land Of Me",
-    "theme": "#8CB369",
+    "theme": "linear-gradient(#fffbd5, #b20a2c)",
     "img": "../images/jameshunt_7.jpg",
     "alt": "Land Of Me Image",
     "bio": "The Land of Me from Made In Me allows children to journey through a magic world where they can take part in specific activities. The Land of Me up offers unique 6 chapters that focus on different learning outcomes. The application was designed for desktop in mind but was also updated to work on iOS and Android devices. ",

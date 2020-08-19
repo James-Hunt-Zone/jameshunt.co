@@ -6,11 +6,10 @@ const HeaderEl = styled.header`
   grid-auto-flow: row;
   grid-template-columns: none;
   align-content: center;
-  height: 80vh;
-  padding: 0 15px;
+  padding: 15px;
 
   @media (min-width: 720px) {
-    padding: 0 30px;
+    padding: 30px;
   }
 `;
 
@@ -26,6 +25,7 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   margin: 0;
   font-weight: 100;
+  color: #8c8c8c;
 
   @media (min-width: 720px) {
     font-size: 2em;

@@ -9,13 +9,13 @@ const Ribbon = styled.div`
   width: 100%;
   height: calc((75px / 2) + 50%);
   z-index: -1;
-  background: ${props => props.ribbonColor || '#fca5a9'};
+  background-image: ${props => props.ribbonColor};
 `;
 
-const ProjectRibbon = ({ projectInfo }) => {
+const ProjectRibbon = ({ projectInfo, children }) => {
   const { theme } = projectInfo;
 
-  return <Ribbon ribbonColor={theme} />;
+  return <Ribbon ribbonColor={theme}>{children}</Ribbon>;
 };
 
 export default ProjectRibbon;

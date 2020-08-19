@@ -35,6 +35,17 @@ const ImageWrapper = styled.div`
   }
 `;
 
+const CurveWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
+  line-height: 0;
+  width: 100%;
+
+  svg: {
+    fill: #ffffff;
+  }
+`;
+
 const ProjectHeader = ({ projectInfo }) => {
   const { alt, img, title, subTitle } = projectInfo;
 
@@ -44,7 +55,21 @@ const ProjectHeader = ({ projectInfo }) => {
         <ImageWrapper>
           <Img fluid={img.childImageSharp.fluid} alt={alt} />
         </ImageWrapper>
-        <ProjectRibbon projectInfo={projectInfo} />
+        <ProjectRibbon projectInfo={projectInfo}>
+          <CurveWrapper>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 1620 51"
+              preserveAspectRatio="xMinYMin"
+              data-di-res-id="a79604eb-91d5d313"
+              data-di-rand="1597694178676"
+              style={{ fill: '#ffffff' }}
+            >
+              <path d="m1620,48.08336l0,2.91664l-1620,0l0,-3.06237c249.95348,-27.44039 526.27345,-47.93763 794.02262,-47.93763c345.2406,0 622.02663,22.39195 825.97738,48.08336z"></path>
+            </svg>
+          </CurveWrapper>
+        </ProjectRibbon>
       </ProjectSection>
       <ProjectSection>
         <Title>{title}</Title>
